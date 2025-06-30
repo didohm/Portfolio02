@@ -756,24 +756,29 @@
             animation: textReveal 0.8s ease-out 0.3s backwards;
         }
 
-        .contact-buttons {
+        ..contact-buttons {
             display: flex;
-            gap: 20px;
+           
+       
             justify-content: center;
-                 flex-wrap: wrap;    
+            align-items: center;
             
         }
 
         .contact-btn {
-            margin: 15px 15px;
             width: 140px;
-            height: 50px;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
+           height: 40px;
+           margin: 15px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+ background: linear-gradient(45deg, var(--primary), var(--secondary));
             border: none;
             border-radius: 50px;
             color: var(--light);
             text-decoration: none;
             font-weight: 600;
+            text-align: center;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
@@ -914,10 +919,8 @@
             100% { background-position: 200% 0; }
         }
         .course {
-            height: 25px;
-            padding-right: 13px;
-            
-            
+            height: 20px;
+          padding-right: 15px;
         }
         .text {
             text-decoration: none;

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Himich Boumedien - Creative Developer</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
-
+        
         * {
             margin: 0;
             padding: 0;
@@ -22,7 +21,7 @@
             --darker: #000000;
             --light: #ffffff;
             --gray: #1a1a1a;
-
+        
         }
 
         body {
@@ -51,7 +50,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background:
+            background: 
                 radial-gradient(circle at 25% 25%, var(--primary) 0%, transparent 50%),
                 radial-gradient(circle at 75% 75%, var(--secondary) 0%, transparent 50%),
                 radial-gradient(circle at 50% 50%, var(--accent) 0%, transparent 50%);
@@ -60,17 +59,8 @@
         }
 
         @keyframes pulse {
-
-            0%,
-            100% {
-                opacity: 0.1;
-                transform: scale(1);
-            }
-
-            50% {
-                opacity: 0.2;
-                transform: scale(1.1);
-            }
+            0%, 100% { opacity: 0.1; transform: scale(1); }
+            50% { opacity: 0.2; transform: scale(1.1); }
         }
 
         /* Enhanced Floating Particles */
@@ -109,23 +99,10 @@
         }
 
         @keyframes float {
-            0% {
-                transform: translateY(100vh) translateX(0) rotate(0deg);
-                opacity: 0;
-            }
-
-            10% {
-                opacity: 1;
-            }
-
-            90% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-10vh) translateX(100px) rotate(360deg);
-                opacity: 0;
-            }
+            0% { transform: translateY(100vh) translateX(0) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) translateX(100px) rotate(360deg); opacity: 0; }
         }
 
         /* Navigation with enhanced animations */
@@ -170,13 +147,8 @@
         }
 
         @keyframes logoGlow {
-            from {
-                filter: drop-shadow(0 0 5px var(--primary));
-            }
-
-            to {
-                filter: drop-shadow(0 0 15px var(--accent));
-            }
+            from { filter: drop-shadow(0 0 5px var(--primary)); }
+            to { filter: drop-shadow(0 0 15px var(--accent)); }
         }
 
         .nav-links {
@@ -189,28 +161,16 @@
             animation: slideInFromTop 0.6s ease-out backwards;
         }
 
-        .nav-links li:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-
-        .nav-links li:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .nav-links li:nth-child(3) {
-            animation-delay: 0.3s;
-        }
-
-        .nav-links li:nth-child(4) {
-            animation-delay: 0.4s;
-        }
+        .nav-links li:nth-child(1) { animation-delay: 0.1s; }
+        .nav-links li:nth-child(2) { animation-delay: 0.2s; }
+        .nav-links li:nth-child(3) { animation-delay: 0.3s; }
+        .nav-links li:nth-child(4) { animation-delay: 0.4s; }
 
         @keyframes slideInFromTop {
             from {
                 opacity: 0;
                 transform: translateY(-30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -285,7 +245,6 @@
                 opacity: 0;
                 transform: translateY(50px) scale(0.9);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -301,20 +260,15 @@
             border-radius: 50%;
             overflow: hidden;
             border: 4px solid var(--primary);
-            box-shadow:
+            box-shadow: 
                 0 0 30px rgba(0, 102, 255, 0.3),
                 0 0 60px rgba(0, 102, 255, 0.1);
             animation: float-photo 6s ease-in-out infinite, photoGlow 3s ease-in-out infinite alternate;
         }
 
         @keyframes photoGlow {
-            from {
-                box-shadow: 0 0 30px rgba(0, 102, 255, 0.3), 0 0 60px rgba(0, 102, 255, 0.1);
-            }
-
-            to {
-                box-shadow: 0 0 50px rgba(80, 218, 214, 0.4), 0 0 80px rgba(80, 218, 214, 0.2);
-            }
+            from { box-shadow: 0 0 30px rgba(0, 102, 255, 0.3), 0 0 60px rgba(0, 102, 255, 0.1); }
+            to { box-shadow: 0 0 50px rgba(80, 218, 214, 0.4), 0 0 80px rgba(80, 218, 214, 0.2); }
         }
 
         .hero-photo::before {
@@ -353,31 +307,19 @@
             color: var(--primary);
             border-radius: 50%;
         }
-
+        
         @keyframes float-photo {
-
-            0%,
-            100% {
-                transform: translateY(0) rotate(0deg);
-            }
-
-            50% {
-                transform: translateY(-10px) rotate(2deg);
-            }
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(2deg); }
         }
 
         @keyframes rotate-border {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
         .hero-title {
-            font-family: 'Orbitron', monospace;
+            font-family:'Orbitron', monospace;
             font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 700;
             margin-bottom: 15px;
@@ -386,7 +328,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
             background-size: 200% 200%;
-            animation:
+            animation: 
                 glow 3s ease-in-out infinite alternate,
                 gradientShift 4s ease-in-out infinite;
             padding: 10px 20px;
@@ -395,27 +337,14 @@
         }
 
         @keyframes glow {
-            from {
-                filter: drop-shadow(0 0 20px var(--primary));
-            }
-
-            to {
-                filter: drop-shadow(0 0 40px var(--secondary));
-            }
+            from { filter: drop-shadow(0 0 20px var(--primary)); }
+            to { filter: drop-shadow(0 0 40px var(--secondary)); }
         }
 
         @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .hero-subtitle {
@@ -431,7 +360,6 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 0.9;
                 transform: translateY(0);
@@ -473,7 +401,7 @@
 
         .hero-cta:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow:
+            box-shadow: 
                 0 20px 40px rgba(0, 102, 255, 0.3),
                 0 0 20px rgba(0, 102, 255, 0.2);
         }
@@ -496,7 +424,7 @@
             height: 100px;
             border: 2px solid var(--primary);
             transform: rotate(45deg);
-            animation:
+            animation: 
                 rotate 20s linear infinite,
                 float-geo 8s ease-in-out infinite;
             filter: drop-shadow(0 0 10px var(--primary));
@@ -509,7 +437,7 @@
             height: 80px;
             border-radius: 50%;
             border: 2px solid var(--secondary);
-            animation:
+            animation: 
                 float-geo 8s ease-in-out infinite,
                 pulse-border 3s ease-in-out infinite;
             filter: drop-shadow(0 0 8px var(--secondary));
@@ -523,55 +451,29 @@
             border-left: 30px solid transparent;
             border-right: 30px solid transparent;
             border-bottom: 50px solid var(--accent);
-            animation:
+            animation: 
                 float-geo 6s ease-in-out infinite reverse,
                 triangle-glow 4s ease-in-out infinite alternate;
         }
 
         @keyframes rotate {
-            from {
-                transform: rotate(45deg);
-            }
-
-            to {
-                transform: rotate(405deg);
-            }
+            from { transform: rotate(45deg); }
+            to { transform: rotate(405deg); }
         }
 
         @keyframes float-geo {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
         }
 
         @keyframes pulse-border {
-
-            0%,
-            100% {
-                border-width: 2px;
-                opacity: 0.7;
-            }
-
-            50% {
-                border-width: 4px;
-                opacity: 1;
-            }
+            0%, 100% { border-width: 2px; opacity: 0.7; }
+            50% { border-width: 4px; opacity: 1; }
         }
 
         @keyframes triangle-glow {
-            from {
-                filter: drop-shadow(0 0 5px var(--accent));
-            }
-
-            to {
-                filter: drop-shadow(0 0 20px var(--accent));
-            }
+            from { filter: drop-shadow(0 0 5px var(--accent)); }
+            to { filter: drop-shadow(0 0 20px var(--accent)); }
         }
 
         /* Enhanced Sections */
@@ -605,7 +507,6 @@
                 opacity: 0;
                 transform: translateY(30px) scale(0.9);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -630,7 +531,6 @@
                 opacity: 0;
                 transform: translateX(-50px);
             }
-
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -651,17 +551,8 @@
         }
 
         @keyframes borderPulse {
-
-            0%,
-            100% {
-                transform: scale(1);
-                opacity: 0.7;
-            }
-
-            50% {
-                transform: scale(1.02);
-                opacity: 1;
-            }
+            0%, 100% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.02); opacity: 1; }
         }
 
         .about-photo {
@@ -691,7 +582,6 @@
                 opacity: 0;
                 transform: translateX(50px);
             }
-
             to {
                 opacity: 1;
                 transform: translateX(0);
@@ -706,13 +596,8 @@
         }
 
         @keyframes textGlow {
-            from {
-                text-shadow: 0 0 5px var(--primary);
-            }
-
-            to {
-                text-shadow: 0 0 15px var(--primary);
-            }
+            from { text-shadow: 0 0 5px var(--primary); }
+            to { text-shadow: 0 0 15px var(--primary); }
         }
 
         .about-text p {
@@ -747,24 +632,15 @@
             animation: cardFadeIn 0.6s ease-out backwards;
         }
 
-        .skill-card:nth-child(1) {
-            animation-delay: 0.1s;
-        }
-
-        .skill-card:nth-child(2) {
-            animation-delay: 0.3s;
-        }
-
-        .skill-card:nth-child(3) {
-            animation-delay: 0.5s;
-        }
+        .skill-card:nth-child(1) { animation-delay: 0.1s; }
+        .skill-card:nth-child(2) { animation-delay: 0.3s; }
+        .skill-card:nth-child(3) { animation-delay: 0.5s; }
 
         @keyframes cardFadeIn {
             from {
                 opacity: 0;
                 transform: translateY(30px) scale(0.9);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -807,7 +683,7 @@
         .skill-card:hover {
             transform: translateY(-15px) scale(1.02);
             border-color: var(--primary);
-            box-shadow:
+            box-shadow: 
                 0 30px 60px rgba(0, 102, 255, 0.2),
                 0 0 30px rgba(0, 102, 255, 0.1);
         }
@@ -829,15 +705,8 @@
         }
 
         @keyframes iconBounce {
-
-            0%,
-            100% {
-                transform: scale(1.2) rotate(5deg);
-            }
-
-            50% {
-                transform: scale(1.3) rotate(-5deg);
-            }
+            0%, 100% { transform: scale(1.2) rotate(5deg); }
+            50% { transform: scale(1.3) rotate(-5deg); }
         }
 
         .skill-card h3 {
@@ -874,7 +743,6 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -887,53 +755,41 @@
             opacity: 0.9;
             animation: textReveal 0.8s ease-out 0.3s backwards;
         }
-
         .contact-buttons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+        
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* يعطي مسافة بين الصورة والنص */
+  padding: 10px 20px;
+  width: fit-content;
+  height: 40px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  border: none;
+  border-radius: 50px;
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .contact-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            /* يعطي مسافة بين الصورة والنص */
-            padding: 10px 20px;
-            margin-right: 15px;
-            width: fit-content;
-            height: 40px;
-            background: linear-gradient(45deg, var(--primary), var(--secondary));
-            border: none;
-            border-radius: 50px;
-            color: var(--light);
-            text-decoration: none;
-            font-weight: 600;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .contact-btn:nth-child(1) {
-            animation-delay: 0.5s;
-        }
-
-        .contact-btn:nth-child(2) {
-            animation-delay: 0.7s;
-        }
-
-        .contact-btn:nth-child(3) {
-            animation-delay: 0.9s;
-        }
+        .contact-btn:nth-child(1) { animation-delay: 0.5s; }
+        .contact-btn:nth-child(2) { animation-delay: 0.7s; }
+        .contact-btn:nth-child(3) { animation-delay: 0.9s; }
 
         @keyframes buttonSlideIn {
             from {
                 opacity: 0;
                 transform: translateY(20px) scale(0.9);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0) scale(1);
@@ -957,7 +813,7 @@
 
         .contact-btn:hover {
             transform: translateY(-5px) scale(1.05);
-            box-shadow:
+            box-shadow: 
                 0 15px 30px rgba(0, 102, 255, 0.4),
                 0 0 20px rgba(0, 102, 255, 0.2);
         }
@@ -980,7 +836,6 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -992,18 +847,18 @@
             .nav-links {
                 display: none;
             }
-
+            
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 40px;
                 text-align: center;
             }
-
+            
             .contact-buttons {
                 flex-direction: column;
                 align-items: center;
             }
-
+            
             .skills-grid {
                 grid-template-columns: 1fr;
             }
@@ -1037,7 +892,6 @@
                 opacity: 0;
                 transform: translateY(20px);
             }
-
             to {
                 opacity: 0.9;
                 transform: translateY(0);
@@ -1045,15 +899,8 @@
         }
 
         @keyframes fadeOut {
-            from {
-                opacity: 0.8;
-                transform: scale(1);
-            }
-
-            to {
-                opacity: 0;
-                transform: scale(0);
-            }
+            from { opacity: 0.8; transform: scale(1); }
+            to { opacity: 0; transform: scale(0); }
         }
 
         /* Loading animation for images */
@@ -1064,27 +911,21 @@
         }
 
         @keyframes shimmer {
-            0% {
-                background-position: -200% 0;
-            }
-
-            100% {
-                background-position: 200% 0;
-            }
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
         }
-
         .course {
             height: 20px;
-            display: flex;
-            padding-right: 15px;
+            display:flex;
+          padding-right: 15px;
         }
+        
     </style>
 </head>
-
 <body>
     <!-- Animated Background -->
     <div class="bg-animation"></div>
-
+    
     <!-- Floating Particles -->
     <div class="particles" id="particles"></div>
 
@@ -1106,13 +947,13 @@
         <div class="geometric geo-1"></div>
         <div class="geometric geo-2"></div>
         <div class="geometric geo-3"></div>
-
+        
         <div class="hero-content">
             <div class="hero-photo">
                 <!-- Replace the placeholder with your actual image -->
                 <!-- <img src="your-photo.jpg" alt="Himich Boumedien"> -->
                 <div class="hero-photo-placeholder">
-                    <img src="n.jpg">
+<img src="n.jpg">
                 </div>
             </div>
             <h1 class="hero-title">HIMICH BOUMEDIEN</h1>
@@ -1131,17 +972,14 @@
             <div class="about-grid">
                 <div class="about-image animate-on-scroll">
                     <div class="about-photo">
-                        <img src="images.png" alt="Himich Boumedien">
+                      <img src="images.png" alt="Himich Boumedien">
                     </div>
                 </div>
                 <div class="about-text animate-on-scroll">
                     <h3>Higher School of Management and Digital Economy</h3>
                     <p>I am a student at the Higher School of Management and Digital Economy (H.S.M.D.E).</p>
-                    <p>My studies are focused on disciplines that merge modern management, economics, and digital
-                        transformation.</p>
-                    <p>I'm acquiring the knowledge and skills necessary to understand and navigate the challenges and
-                        opportunities of the digital age, including fields such as digitalization, e-commerce, digital
-                        marketing, and data analytics, in addition to core management and economic principles.</p>
+                    <p>My studies are focused on disciplines that merge modern management, economics, and digital transformation.</p>
+                    <p>I'm acquiring the knowledge and skills necessary to understand and navigate the challenges and opportunities of the digital age, including fields such as digitalization, e-commerce, digital marketing, and data analytics, in addition to core management and economic principles.</p>
                 </div>
             </div>
         </div>
@@ -1155,8 +993,7 @@
                 <div class="skill-card animate-on-scroll">
                     <div class="skill-icon">⚡</div>
                     <h3>Frontend Development</h3>
-                    <p>React, Vue.js, TypeScript, Next.js, and modern CSS frameworks for creating stunning user
-                        interfaces</p>
+                    <p>React, Vue.js, TypeScript, Next.js, and modern CSS frameworks for creating stunning user interfaces</p>
                 </div>
                 <div class="skill-card animate-on-scroll">
                     <div class="skill-icon">🚀</div>
@@ -1168,8 +1005,8 @@
                     <h3>UI/UX Design</h3>
                     <p>Figma, Adobe Creative Suite, and user research for creating intuitive digital experiences</p>
                 </div>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -1178,28 +1015,26 @@
         <div class="container">
             <h2 class="section-title animate-on-scroll">Let's Connect</h2>
             <div class="contact-content animate-on-scroll">
-                <p class="contact-text">Ready to bring your next project to life? Let's collaborate and create something
-                    extraordinary together.</p>
+                <p class="contact-text">Ready to bring your next project to life? Let's collaborate and create something extraordinary together.</p>
                 <div class="contact-buttons">
-
-
-                    <a href="https://www.linkedin.com/in/boumedien-himich-62a264371/" target="_blank"
-                        class="contact-btn">Linkedin
-                        <img class="course" src="linkedin.png" alt="linkedin">
+                    
+                        
+                    <a href="https://www.linkedin.com/in/boumedien-himich-62a264371/" target="_blank" class="contact-btn">Linkedin
+                    <img class="course" src="linkedin.png" alt="linkedin" >
                     </a>
-
-                    <a href="https://www.instagram.com/didohm_/" target="_blank" class="contact-btn">Instagram
-                        <img class="course" src="insta.png" alt="Instagram">
+                        
+                    <a href="https://www.instagram.com/didohm_/"  target="_blank" class="contact-btn">Instagram
+                    <img class="course" src="insta.png" alt="Instagram" >
                     </a>
-
-
-
+                         
+                    
+                        
                     <a href="https://www.facebook.com/dido.hm.2025/" class="contact-btn" target="_blank">Facebook
-                        <img class="course" src="t.png" alt="Facebook">
-                    </a>
-
-                </div>
+                         <img class="course" src="t.png" alt="Facebook" >
+                </a>
+                
             </div>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -1214,7 +1049,7 @@
         function createParticles() {
             const particles = document.getElementById('particles');
             const particleCount = 60;
-
+            
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 const types = ['particle', 'particle large', 'particle medium'];
@@ -1231,13 +1066,13 @@
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+            
             if (scrollTop > 100) {
                 navbar.classList.add('scrolled');
             } else {
                 navbar.classList.remove('scrolled');
             }
-
+            
             // Hide/show navbar based on scroll direction
             if (scrollTop > lastScrollTop && scrollTop > 200) {
                 navbar.style.transform = 'translateY(-100%)';
@@ -1310,10 +1145,10 @@
                 animation: fadeOut 1s ease-out forwards;
                 box-shadow: 0 0 8px var(--primary);
             `;
-
+            
             document.body.appendChild(cursor);
             mouseTrails.push(cursor);
-
+            
             setTimeout(() => {
                 if (cursor.parentNode) {
                     cursor.parentNode.removeChild(cursor);
@@ -1326,7 +1161,7 @@
         function typeWriter(element, text, speed = 100) {
             let i = 0;
             element.textContent = '';
-
+            
             function addCursor() {
                 const cursor = document.createElement('span');
                 cursor.textContent = '|';
@@ -1334,13 +1169,13 @@
                 cursor.style.marginLeft = '2px';
                 element.appendChild(cursor);
             }
-
+            
             function type() {
                 if (i < text.length) {
                     // Remove cursor if it exists
                     const cursor = element.querySelector('span');
                     if (cursor) cursor.remove();
-
+                    
                     element.textContent += text.charAt(i);
                     i++;
                     setTimeout(type, speed);
@@ -1354,7 +1189,7 @@
                     }, 3000);
                 }
             }
-
+            
             type();
         }
 
@@ -1372,7 +1207,7 @@
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
             const parallaxElements = document.querySelectorAll('.geometric');
-
+            
             parallaxElements.forEach((element, index) => {
                 const speed = 0.5 + (index * 0.2);
                 const yPos = -(scrolled * speed);
@@ -1398,9 +1233,9 @@
                     pointer-events: none;
                     z-index: 1;
                 `;
-
+                
                 card.appendChild(ripple);
-
+                
                 setTimeout(() => {
                     ripple.remove();
                 }, 600);
@@ -1437,7 +1272,7 @@
                 justify-content: center;
                 animation: fadeOutOverlay 1s ease-out 0.5s forwards;
             `;
-
+            
             const loadingText = document.createElement('div');
             loadingText.textContent = 'LOADING...';
             loadingText.style.cssText = `
@@ -1446,10 +1281,10 @@
                 color: var(--primary);
                 animation: pulse 1s ease-in-out infinite;
             `;
-
+            
             loadingOverlay.appendChild(loadingText);
             document.body.appendChild(loadingOverlay);
-
+            
             setTimeout(() => {
                 loadingOverlay.remove();
                 // Start typing effect for hero title
@@ -1533,5 +1368,4 @@
         });
     </script>
 </body>
-
 </html>

@@ -902,7 +902,6 @@
             gap: 10px;
             /* يعطي مسافة بين الصورة والنص */
             padding: 10px 20px;
-            
             width: fit-content;
             height: 40px;
             background: linear-gradient(45deg, var(--primary), var(--secondary));
@@ -992,7 +991,9 @@
             .nav-links {
                 display: none;
             }
-
+            .nav-container{
+                justify-content: center;
+            }
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -1080,8 +1081,21 @@
         }
         a.contact-btn {
     margin-right: 15px;
-    margin: 13px;
+    margin: 20px;
+        } 
+        #email{
+            height: 30px; 
+            transition: transform 0.3s ease;
         }
+        .imageee,.whats{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            flex-wrap: wrap; 
+        }
+        .imageee:hover #email,.whats:hover #email{ transform: scale(1.8);}
+        
     </style>
 </head>
 
@@ -1201,7 +1215,9 @@
                     <a href="https://www.facebook.com/dido.hm.2025/" class="contact-btn" target="_blank">Facebook
                         <img class="course" src="t.png" alt="Facebook">
                     </a>
-
+<a href="https://www.facebook.com/dido.hm.2025/" class="contact-btn" target="_blank" download="">Download CV
+                        <img class="course" src="t.png" alt="Facebook">
+                    </a>
                 </div>
             </div>
     </section>
@@ -1209,7 +1225,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Himich Boumedien. Crafted with passion and precision.</p>
+            <p>&copy; 2025 Himich Boumedien. Crafted with passion and precision. <br><br></p>
+                <div class="imageee">
+            <img id="email" src="email.png"><p>Himichboumedien_etd@esgen.edu.dz</p><br><br><br></div>
+            <div class="whats">
+            <img id="email" src="whats.png"><p>+213 792564538</p></div>
+            
         </div>
     </footer>
 
@@ -1537,5 +1558,4 @@
         });
     </script>
 </body>
-
 </html>

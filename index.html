@@ -1076,26 +1076,31 @@
         }
 
         .course {
-            height: 20px;
-            display: flex;
+            height: 30px;
+            border-radius: 25px;
             padding-right: 15px;
+            transition: all 0.3s ease;
+        }
+        .course:hover { 
+            transform: scale(1.3);
         }
         a.contact-btn {
-    margin-right: 15px;
-    margin: 20px;
+        margin-right: 15px;
+        margin: 20px;
         } 
-        #email{
-            height: 30px; 
-            transition: transform 0.3s ease;
+        .socialmedia{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            margin-top: 5rem;
+            
         }
-        .imageee,.whats{
+        .mail{
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            flex-wrap: wrap; 
         }
-        .imageee:hover #email,.whats:hover #email{ transform: scale(1.8);}
     </style>
 </head>
 
@@ -1200,25 +1205,30 @@
                     extraordinary together.</p>
                 <div class="contact-buttons">
 
+<a href="CV.pdf" class="contact-btn" target="_blank" download>Download CV
+                        <img class="course" src="cv.webp" alt="CV">
+                    </a>
+                </div> 
+            </div>
+            <div class="socialmedia">
 
                     <a href="https://www.linkedin.com/in/boumedien-himich-62a264371/" target="_blank"
-                        class="contact-btn">Linkedin
+                    >
                         <img class="course" src="linkedin.png" alt="linkedin">
                     </a>
 
-                    <a href="https://www.instagram.com/didohm_/" target="_blank" class="contact-btn">Instagram
+                    <a href="https://www.instagram.com/didohm_/" target="_blank">
                         <img class="course" src="insta.png" alt="Instagram">
                     </a>
 
 
 
-                    <a href="https://www.facebook.com/dido.hm.2025/" class="contact-btn" target="_blank">Facebook
+                    <a href="https://www.facebook.com/dido.hm.2025/"  target="_blank">
                         <img class="course" src="t.png" alt="Facebook">
                     </a>
-<a href="CV.pdf" class="contact-btn" target="_blank" download>Download CV
-                        <img class="course" src="cv.webp" alt="CV">
+                <a href="https://github.com/didohm"  target="_blank">
+                        <img class="course" src="github-brands.svg" alt="Github">
                     </a>
-                </div>
             </div>
     </section>
 
@@ -1226,11 +1236,10 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Himich Boumedien. Crafted with passion and precision. </p><br>
-                <div class="imageee">
-            <img id="email" src="email.png"><p>boumedienhimich_etd@esgen.edu.dz</p></div>
-            <div class="whats">
-            <img id="email" src="whats.png"><p>+213 792564538</p></div>
-            
+            <div class="mail">
+                <img  class="course" src="email.png" alt="mail">
+                <p>boumedienhimich_etd@esgen.edu.dz</p>
+            </div>
         </div>
     </footer>
 
